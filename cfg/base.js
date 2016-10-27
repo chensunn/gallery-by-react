@@ -7,7 +7,8 @@ let defaultSettings = require('./defaults');
 // @example:
 // let npmBase = path.join(__dirname, '../node_modules');
 // let additionalPaths = [ path.join(npmBase, 'react-bootstrap') ];
-let additionalPaths = [];
+let autoprefixer = path.join(__dirname, '../node_modules');
+let additionalPaths = [path.join(autoprefixer, 'autoprefixer')];
 
 module.exports = {
   additionalPaths: additionalPaths,
